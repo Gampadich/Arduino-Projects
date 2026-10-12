@@ -1,4 +1,3 @@
-
 #define moveSensor 9  // Digital pin connected to the motion sensor
 #define ledPin 8      // Digital pin connected to the LED
 
