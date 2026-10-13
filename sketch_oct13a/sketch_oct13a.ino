@@ -23,11 +23,17 @@ void setup() {
   pinMode(sectorG, OUTPUT);
   pinMode(sectorDP, OUTPUT);
   
-  // Initialize Serial communication for debugging at 9600 baud
+  // Initialize Serial communication for debugging at 9600 baud 
   Serial.begin(9600);
 
-  // Turn on the decimal point by default as an indicator
+  // Turn on the decimal point by default as an indicator and default 0 number
   digitalWrite(sectorDP, HIGH);
+  digitalWrite(sectorA, HIGH);
+  digitalWrite(sectorB, HIGH);
+  digitalWrite(sectorC, HIGH);
+  digitalWrite(sectorD, HIGH);
+  digitalWrite(sectorF, HIGH);
+  digitalWrite(sectorE, HIGH);
 }
 
 // Global counter variable to track current digit (0-9)
